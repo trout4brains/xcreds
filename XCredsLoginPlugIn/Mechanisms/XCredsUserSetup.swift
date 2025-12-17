@@ -18,11 +18,8 @@ class XCredsUserSetup: XCredsBaseMechanism{
                 let build = infoPlist["CFBundleVersion"] as? String,
                 let version = infoPlist["CFBundleShortVersionString"] as? String {
                 
-                VersionCheck.shared.reportLicenseUsage(identifier: "com.twocanoes.xcreds", appVersion:version,buildNumber: build, event: .checkin) { isSuccess in
-                    print(isSuccess)
-                }
+                // Removed VersionCheck usage (not available in this target)
 
-                
                 TCSLogInfoWithMark("------------------------------------------------------------------")
                 TCSLogInfoWithMark("XCreds Login \(version).\(build)")
                 if DefaultsOverride.standardOverride.bool(forKey: "showDebug")==false {
