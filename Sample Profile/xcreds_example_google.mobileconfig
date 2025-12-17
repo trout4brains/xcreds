@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>Configures XCreds configuration preferences</string>
+			<key>PayloadDisplayName</key>
+			<string>XCreds</string>
+			<key>PayloadIdentifier</key>
+			<string>com.github.erikberglund.ProfileCreator.47F59CD0-E476-4016-A8C6-82837B61C7CE.com.twocanoes.xcreds.F5B79C66-146F-4F8A-9237-CAF10606615C</string>
+			<key>PayloadOrganization</key>
+			<string></string>
+			<key>PayloadType</key>
+			<string>com.twocanoes.xcreds</string>
+			<key>PayloadUUID</key>
+			<string>F5B79C66-146F-4F8A-9237-CAF10606615C</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>clientID</key>
+			<string>[redacted]</string>
+			<key>clientSecret</key>
+			<string>[redacted]</string>
+			<key>discoveryURL</key>
+			<string>https://accounts.google.com/.well-known/openid-configuration</string>
+			<key>redirectURI</key>
+			<string>https://127.0.0.1/xcreds</string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>google xcreds</string>
+	<key>PayloadDisplayName</key>
+	<string>google xcreds</string>
+	<key>PayloadIdentifier</key>
+	<string>com.github.erikberglund.ProfileCreator.47F59CD0-E476-4016-A8C6-82837B61C7CE</string>
+	<key>PayloadOrganization</key>
+	<string>twocanoes</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>47F59CD0-E476-4016-A8C6-82837B61C7CE</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
