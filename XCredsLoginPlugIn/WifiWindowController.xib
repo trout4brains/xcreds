@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="23727" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="24412" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23727"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24412"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -29,7 +29,7 @@
             <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="144" y="174" width="450" height="356"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3440" height="1415"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3440" height="1409"/>
             <view key="contentView" id="82w-TR-3gA">
                 <rect key="frame" x="0.0" y="0.0" width="450" height="356"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,7 +85,7 @@
                                 </connections>
                             </popUpButton>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VOb-lv-VeC">
-                                <rect key="frame" x="5" y="81.5" width="23" height="26"/>
+                                <rect key="frame" x="5" y="82" width="23" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="wifi" catalog="system" id="2Jg-hD-hZt"/>
                             </imageView>
@@ -158,7 +158,7 @@ Gw
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="144" y="174" width="480" height="198"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3440" height="1415"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3440" height="1409"/>
             <view key="contentView" id="Dza-jC-NB8">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="198"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -183,7 +183,7 @@ Gw
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cgl-qV-y0O">
-                        <rect key="frame" x="381" y="13" width="86" height="32"/>
+                        <rect key="frame" x="388" y="20" width="72" height="24"/>
                         <buttonCell key="cell" type="push" title="Join" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cPE-0Q-pm2">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -199,7 +199,7 @@ DQ
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mVP-CL-XEv">
-                        <rect key="frame" x="297" y="13" width="86" height="32"/>
+                        <rect key="frame" x="304" y="20" width="72" height="24"/>
                         <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0jZ-wI-6zS">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -214,7 +214,7 @@ DQ
                         </connections>
                     </button>
                     <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ju4-Cc-cV9">
-                        <rect key="frame" x="167" y="107" width="293" height="22"/>
+                        <rect key="frame" x="167" y="106" width="293" height="23"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Username" drawsBackground="YES" id="AWi-NV-QKq">
                             <font key="font" metaFont="message"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -246,7 +246,7 @@ DQ
                         </textFieldCell>
                     </textField>
                     <secureTextField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iXc-w6-KVu">
-                        <rect key="frame" x="166" y="82" width="294" height="21"/>
+                        <rect key="frame" x="166" y="78" width="294" height="24"/>
                         <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Password" drawsBackground="YES" usesSingleLineMode="YES" id="ytx-J6-yi1">
                             <font key="font" metaFont="message"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -257,7 +257,7 @@ DQ
                         </secureTextFieldCell>
                     </secureTextField>
                     <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Sb1-PH-di9">
-                        <rect key="frame" x="164" y="52" width="300" height="25"/>
+                        <rect key="frame" x="167" y="48" width="293" height="24"/>
                         <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="3p3-NJ-fhq" id="Vf9-S1-c8f">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="message"/>
@@ -307,8 +307,8 @@ DQ
         </window>
     </objects>
     <resources>
-        <image name="NSRefreshFreestandingTemplate" width="20" height="20"/>
-        <image name="NSStopProgressFreestandingTemplate" width="20" height="20"/>
+        <image name="NSRefreshFreestandingTemplate" width="19" height="19"/>
+        <image name="NSStopProgressFreestandingTemplate" width="19" height="19"/>
         <image name="globe" catalog="system" width="15" height="15"/>
         <image name="wifi" catalog="system" width="17" height="13"/>
     </resources>

@@ -7,6 +7,8 @@
 
 import Cocoa
 
+var claimAccountFlag:Bool = false
+
 public class DefaultsOverride: UserDefaults {
 
     static let standardOverride = DefaultsOverride()

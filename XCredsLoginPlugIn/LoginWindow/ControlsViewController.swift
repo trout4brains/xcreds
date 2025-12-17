@@ -17,6 +17,7 @@ class ControlsViewController: NSViewController, NSPopoverDelegate {
     @IBOutlet weak var refreshGridColumn: NSGridColumn?
     @IBOutlet weak var shutdownGridColumn: NSGridColumn?
     @IBOutlet weak var restartGridColumn: NSGridColumn?
+    @IBOutlet weak var claimAccount: NSGridColumn?
 
     @IBOutlet weak var systemInfoButton: NSButton!
     @IBOutlet weak var macLoginWindowGridColumn: NSGridColumn?
@@ -385,6 +386,7 @@ class ControlsViewController: NSViewController, NSPopoverDelegate {
         }
         TCSLogWithMark("refreshing")
 
+        var claimAccountFlag = false
         delegate.reload()
 
     }
@@ -454,7 +456,25 @@ class ControlsViewController: NSViewController, NSPopoverDelegate {
         }
     }
 
+    //MISD - 2025 /*
+    @IBAction func claimAccount(_ sender: Any) {
+        //MISD 2025 - Change URL to Claim account
+        TCSLogWithMark("claim account button pressed")
+        
+        guard let delegate = delegate else {
+            TCSLogWithMark("No delegate set for reloading to Claim Account")
+            return
+        }
+        claimAccountFlag = true
+        let claimURL = URL(string:"https://portal.mckinneyisd.net/portal/claim/step1")
+        TCSLogWithMark("Window should be switching to Claim Account")
+        
+        NotificationCenter.default.post(name: NSNotification.Name("LoadClaimPage"), object: nil, userInfo: ["url" : claimURL])
 
+        //delegate.reload()
+        
+    }
+    //MISD - 2025 */
 
 }
 

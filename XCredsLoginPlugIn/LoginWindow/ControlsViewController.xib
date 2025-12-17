@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="23727" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="24412" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23727"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24412"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -31,7 +31,7 @@
             <subviews>
                 <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="D8S-gh-gv5">
                     <rect key="frame" x="0.0" y="98" width="1002" height="19"/>
-                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Unsupported – Visit twocanoes.com/xcreds/support for support options." drawsBackground="YES" id="bHC-M4-jfl">
+                    <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" alignment="center" title="Unsupported – Visit twocanoes.com/xcreds/support for support options." drawsBackground="YES" id="bHC-M4-jfl">
                         <font key="font" metaFont="system" size="16"/>
                         <color key="textColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -41,7 +41,7 @@
                     <rect key="frame" x="0.0" y="14" width="1002" height="88"/>
                     <subviews>
                         <gridView xPlacement="leading" yPlacement="bottom" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="Of1-FL-rgU">
-                            <rect key="frame" x="165" y="10" width="673" height="48"/>
+                            <rect key="frame" x="116" y="10" width="771" height="48"/>
                             <rows>
                                 <gridRow id="Ax5-pH-aQS"/>
                             </rows>
@@ -51,6 +51,7 @@
                                 <gridColumn width="116" trailingPadding="6" id="AiZ-fa-C1D"/>
                                 <gridColumn width="161" trailingPadding="6" id="Qgw-6x-QRs"/>
                                 <gridColumn width="116" id="8Cw-21-fob"/>
+                                <gridColumn id="EeA-nQ-0oI"/>
                             </columns>
                             <gridCells>
                                 <gridCell row="Ax5-pH-aQS" column="vWr-UA-21l" xPlacement="center" id="kmk-C1-8Ed">
@@ -122,6 +123,19 @@ DQ
                                         </connections>
                                     </button>
                                 </gridCell>
+                                <gridCell row="Ax5-pH-aQS" column="EeA-nQ-0oI" id="pTK-BM-eF4">
+                                    <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="hi5-fU-5MT">
+                                        <rect key="frame" x="679" y="0.0" width="92" height="48"/>
+                                        <buttonCell key="cell" type="bevel" title="Claim Account" bezelStyle="rounded" image="NSEveryone" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="n5I-xV-l6A">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <action selector="claimAccount:" target="-2" id="AwG-dA-C5P"/>
+                                            </connections>
+                                        </buttonCell>
+                                        <color key="contentTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </button>
+                                </gridCell>
                             </gridCells>
                         </gridView>
                     </subviews>
@@ -190,6 +204,7 @@ DQ
         </customView>
     </objects>
     <resources>
+        <image name="NSEveryone" width="32" height="32"/>
         <image name="RestartX" width="32" height="32"/>
         <image name="ShutdownX" width="32" height="32"/>
         <image name="loginwindow" width="41" height="32"/>

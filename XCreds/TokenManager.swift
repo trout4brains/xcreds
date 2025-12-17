@@ -299,7 +299,17 @@ class TokenManager:DSQueryable {
             throw ProcessTokenResult.error("invalid idToken")
         }
 
-        let data = try idTokenData(jwtString: idToken)
+        var data = try idTokenData(jwtString: idToken)
+        if let decodedTokenString = String(data: data, encoding: .utf8) {
+            TCSLogWithMark("IDToken:\(decodedTokenString)")
+            if decodedTokenString.contains("[") || decodedTokenString.contains("]") {
+                TCSLogWithMark("There appears to be an array in the output...")
+                let cleanedString = decodedTokenString.replacingOccurrences(of: "[", with: "")
+                                                      .replacingOccurrences(of: "]", with: "")
+                data = cleanedString.data(using: .utf8) ?? Data()
+            }
+        }
+        
         if let decodedTokenString = String(data: data, encoding: .utf8) {
             TCSLogWithMark("IDToken:\(decodedTokenString)")
         }

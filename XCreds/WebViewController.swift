@@ -140,7 +140,17 @@ class WebViewController: NSViewController, TokenManagerFeedbackDelegate {
             loadPage()
         }
     }
+    
+    //MISD - 2025 /*
+    @objc func loadWebPageNotification(_ notification: Notification)
+    {
+        if let url = notification.userInfo?["url"] as? URL {
+            TCSLogWithMark("claimAccountFlag is \(claimAccountFlag)")
+            self.webView.load(URLRequest(url:url))
 
+        }
+    }
+    //MISD - 2025 */
 
 
     private func getOidcLoginURL() async throws -> URL {
@@ -246,7 +256,7 @@ extension WebViewController: WKNavigationDelegate {
                         TCSLogWithMark("the id is defined in prefs (\(passwordElementID)) so seeing if that field is on the page.")
 
                     // we have a mapped field defined in prefs so only check this.
-                        if ids.count==1, ids[0]==passwordElementID, passwords.count==1 {
+                        if ids.count==1, ids[0].contains(passwordElementID), passwords.count==1 {
                             TCSLogWithMark("========= password set===========")
                             self.password=passwords[0]
                         }

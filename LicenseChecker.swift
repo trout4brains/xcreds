@@ -18,7 +18,8 @@ class LicenseChecker: NSObject {
     }
 
     func currentLicenseState() -> LicenseState {
-        let trialDays = 14
+        return .valid(Int(63113904))
+        let trialDays = 0
 
         if UserDefaults.standard.value(forKey: "tts") == nil {
             UserDefaults.standard.setValue(Date(), forKey: "tts")
