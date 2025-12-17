@@ -1,0 +1,6 @@
+framework module ProductLicense {
+  umbrella header "ProductLicense.h"
+  export *
+
+  module * { export * }
+}

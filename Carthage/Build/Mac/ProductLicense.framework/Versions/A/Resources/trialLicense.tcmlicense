@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DateIssued</key>
+	<string>2018-01-15 20:18:54 +0000</string>
+	<key>Edition</key>
+	<string>Trial</string>
+	<key>Email</key>
+	<string>brokaw@twocanoes.com</string>
+	<key>ExpirationDate</key>
+	<string>2018-01-30 00:00:00 +0000</string>
+	<key>LicenseKey</key>
+	<string>96996999-F7D6-485A-91CC-638D4638A6AC</string>
+	<key>MajorVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>Twocanoes</string>
+	<key>NumberOfClients</key>
+	<integer>5</integer>
+	<key>Product</key>
+	<string>TCM</string>
+	<key>Signature</key>
+	<data>
+	AU0O/p3m0JALlaor8sY5IKAGH3b67eSYcH1lGe0puH/kuJBSIE5Je64/eo9BWrDh2psS
+	STFabujvKViNgn8jK7JOrWkC8Vr6cgKHnBsR3o1HEqo69CUOKQ4wEV2RAC1vA1dIspgs
+	tVhC8DsF9vdYpaH+oa7z4Iw1rEPrBn1QALU=
+	</data>
+</dict>
+</plist>
